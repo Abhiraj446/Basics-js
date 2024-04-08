@@ -61,7 +61,9 @@ console.log("working")
 // console.log(st.slice(1,3))
 // console.log(st.reverse())
 
-// let city=["agra","mumbai","delhi","lucknow"];
+let city=["agra","mumbai","delhi","lucknow"];
+// console.log(city.splice(0,3))
+// console.log(city.slice(0,3))
 // console.log(city.copyWithin(2,0))
 // console.log(city.entries())  //gives array iterator
 // console.log(city.fill("patna"))
@@ -93,8 +95,8 @@ console.log("working")
 // let b= typeof Number(a)
 // console.log(b)
 
-let a=[2,5,9,7,4,21,15]
+// let a=[2,5,9,7,4,21,15]
 // console.log(a.slice(2,6))
 // b=a.slice(2,6)
 // console.log(b)
-console.log(a.includes(13))
+// console.log(a.includes(13))
