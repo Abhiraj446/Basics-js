@@ -27,9 +27,9 @@
 
 // let c="JavaScript"
 // console.log(c.substr(4,6))  
-// //4 index 6 next elements
+//4 index 6 next elements
 
-// // let d="JavaScript"
+// let d="JavaScript"
 // console.log(c.substring(4,6))
 
 // console.log(c.toUpperCase())
@@ -46,25 +46,25 @@
 // document.write("DOM")
 
 
-let a="hello world "
-console.log(a.charAt(6))
+// let a=" hello world "
+// console.log(a.charAt(6))
 let b="abhiraj"
-console.log(a.concat(b))
-console.log(a.indexOf("o"))
-console.log(a.lastIndexOf("world"))
-console.log(a.replace("hello","abhi"))
-console.log(a.search("e"))
-console.log(a.slice(2,8))
-console.log(a.substr(2,5))
-console.log(a.substring(1,7))
-console.log(a.toUpperCase())
-console.log(a.valueOf())
-console.log(a.trim()) //ends the gap between cots
+// console.log(a.concat(b))
+// console.log(a.indexOf("o"))
+// console.log(a.lastIndexOf("world"))
+// console.log(a.replace("hello","abhi"))
+// console.log(a.search("e"))
+// console.log(a.slice(2,8))    
+// console.log(a.substr(2,5))
+// console.log(a.substring(1,7))
+// console.log(a.toUpperCase())
+// console.log(a.valueOf())
+// console.log(a.trim()) //ends the gap between cots
 
-let c=5
-console.log(c.toString())
+// let c=5
+// console.log(c.toString())
 
-console.log(b.includes('b'))
-console.log(b.charCodeAt(2))
+// console.log(b.includes('b'))
+// console.log(b.charCodeAt(2))
 console.log(b.split(""))
 

@@ -31,8 +31,10 @@
 // });
 
 
-document.addEventListener("mousemove",function(){
-    document.getElementById("demo").innerHTML=Math.random();
-    document.removeHandler("mousemove").innerHTML=Math.random();
-})
+// document.addEventListener("mousemove",function(){
+//     document.getElementById("demo").innerHTML=Math.random();
+//     document.removeHandler("mousemove").innerHTML=Math.random();
+// })
+
+
 
