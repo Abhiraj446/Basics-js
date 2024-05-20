@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>hello oops</h1>
+    <h2></h2>
+    <h3></h3>
+
+    <script>
+
+        console.log("working")
+
+        // function sum(a,b){
+        //     return a+b
+        // }
+        // console.log(sum(2,5))
+        // let show = sum(2,5)
+        // let h2=document.querySelector("h2")
+        // h2.innerHTML=show
+
+        // function sum(a,b,display){
+        //     let result=a+b
+        //     display(result)
+        // }
+        // function player(something){
+        //     document.querySelector("h2").innerHTML=something
+        // }
+        // sum(5,8,player)
+
+        // function row(a,b,c,show){
+        //     let result=a+b-c
+        //     show(result)
+        // }
+        // function display(something){
+        //     document.querySelector("h2").innerHTML=something
+        //     console.log(something)
+        // }
+        // function display1(something){
+        //     document.querySelector("h3").innerHTML=something
+        //     console.log(something)
+        // }
+        // row(5,2,6,display)
+        // row(5,2,6,display1)
+
+
+        // function animal(cat,dog){
+        //     let ani=cat+" "+dog
+        //     return ani
+        // }
+        // function sound(ani){
+        //     let h2 = document.querySelector("h2")
+        //     h2.innerHTML=ani
+        // }
+        // sound(animal("meowww","bark"))
+
+        // function calculator(a,b,c,d){
+        //     let cal=a+b*(c/d)
+        //     return cal
+        // }
+        // function result(cal){
+        //     let h2 = document.querySelector("h2")
+        //     h2.innerHTML=cal
+        // }
+        // result(calculator(2,5,9,4))
+
+        // function call(k){
+        //     let p="hey "+k
+        //     return p
+        // }
+        // function display(p){
+        //     let h2 = document.querySelector("h2")
+        //     h2.innerHTML=p
+        // }
+        // display(call("abhiraj"))
+
+
+        // function maths(x,y,z,solution){
+        //     let result=x+y*z
+        //     solution(result)
+        // }
+        // function result(answer){
+        //     document.querySelector("h2").innerHTML=answer
+        // }
+        // maths(5,8,12,result)
+
+        // function sub(a,b,display){
+        //     let sol=a-b
+        //     display(sol)
+        // }
+        // function solution(anw){
+        //     document.querySelector("h2").innerHTML=anw
+        // }
+        // sub(10,8,solution)
+
+
+        // function calldata(a,b,add){
+        //     let sol=a+b
+        //     add(sol)
+        // }
+        // function solution(ans){
+        //     document.querySelector("h2").innerHTML=ans
+        // }
+        // calldata(10,5,solution)
+
+        let calculate=(n1,n2,callback)=>{
+            let result=callback(n1,n2)
+            console.log(result)
+        }
+        let add=(a,b)=>{
+            return a+b
+        }
+        let sub=(a,b)=>{
+            return a-b
+        }
+        calculate(10,5,add)
+        calculate(10,5,sub)
+
+
+
+    </script>
+
+</body>
+</html>

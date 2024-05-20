@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Callback function</h1>
+
+    <h2></h2>
+    <p id="demo"></p>
+
+
+    <script>
+        
+        console.log("working")
+
+        //simple function
+
+        // function sum(a,b){
+        //     return a+b
+        // }
+        // console.log(sum(2,3))
+        // let ans = sum(2,5)
+        // let h2=document.querySelector("h2")
+        // h2.innerHTML= ans
+
+
+        //Callback function(1st method)
+
+        // function sum(a,b,display){
+        //     let result = a+b
+        //     return result
+        // }
+        // function display(result){
+        //     let h2 = document.querySelector("h2")
+        //     h2.innerHTML=result
+        // }
+        // display(sum(4,5))
+
+        //Callback function(2nd method)
+
+        // function sum(a,b){
+        //     let result = a+b
+        //     display(result)
+        // }
+        // function display(result){
+        //     let h2 = document.querySelector("h2")
+        //     h2.innerHTML=result
+        // }
+        // sum(4,5)
+
+        //main callback
+
+        // function player(something){
+        //     document.querySelector("h2").innerHTML=something;
+        // }
+        // function result(a,b,display){
+        //     let sum=a+b;
+        //     display(sum);
+        // }
+        // result(2,5,player);
+
+        
+        // const arr=[5,4,3,2]
+
+        // function calcM(arr=[]){
+        //     const emp=[]
+        //     for(let i=0; i<arr.length; i++){
+        //         emp.push(arr[i]*2)
+        //     }
+        //     console.log(emp)
+        // }
+        // calcM(arr)
+
+        // function calcD(arr=[]){
+        //     let emp=[]
+        //     for(let i=0; i<arr.length; i++){
+        //         emp.push(arr[i]/2)
+        //     }
+        //     console.log(emp)
+        // }
+        // calcD(arr)
+
+        // only one line difference so much code so we use callback function for this
+
+
+        // const arr=[5,8,7,6,2]
+        // function calculator(arr=[],calc){
+        //     const empt=[]
+        //     for(let i=0; i<arr.length; i++){
+        //         const result=calc(arr[i])
+        //         empt.push(result)
+        //     }
+        //     console.log(empt)
+        // }
+        // function mul(a){
+        //     return a*2
+        // }
+        // function div(a){
+        //     return a/2
+        // }
+        // calculator(arr,mul)
+        // calculator(arr,div)
+
+        //or by compressing
+
+        // const arr=[5,8,7,6,2]
+        // function calculator(arr=[],calc){
+        //     const empt=[]
+        //     for(let i=0; i<arr.length; i++){
+        //         const result=calc(arr[i])
+        //         empt.push(result)
+        //     }
+        //     console.log(empt)
+        // }
+        // mul=(a)=>a*2
+        // div=(a)=>a/2
+        // calculator(arr,mul=(a)=>a*2)
+        // calculator(arr,div=(a)=>a/2)
+
+
+        //callback with settimeinterval
+
+        // const productList=[];
+
+        // const fetchdata=(c)=>{
+        //     setTimeout((c)=>{
+        //         productList.push(
+        //             {
+        //                 name:"Iphone4",
+        //                 price:10000,
+        //             },
+        //             {
+        //                 name:"Iphone5",
+        //                 price:14000,
+        //             },
+        //             {
+        //                 name:"Iphone6",
+        //                 price:18000,
+        //             },
+        //             {
+        //                 name:"Iphone7",
+        //                 price:20000,
+        //             },
+        //         )
+        //         c()
+        //     },2000,c)
+        // }
+        // console.log(productList)
+        // // fetchdata()
+
+        // const display=()=>{
+        //     setTimeout(()=>{
+        //         for(let i=0; i<productList.length; i++){
+        //             const p=document.createElement("p");
+        //             p.innerText=productList[i].name;
+        //             document.body.append(p)
+        //         }
+        //     },1000)
+        // }
+        // fetchdata(display)
+
+
+        // const product=[]
+        // const disc=(show)=>{
+        //     setTimeout((show)=>{
+        //         product.push(
+        //             {
+        //                 name:"ak",
+        //                 age:19,
+        //             },
+        //             {
+        //                 name:"kk",
+        //                 age:19,
+        //             },
+        //             {
+        //                 name:"aks",
+        //                 age:19,
+        //             }
+        //     )
+        //     show()
+        //     },2000,show)
+        // }
+        // console.log(product)
+
+        // const func=()=>{
+        //     setTimeout(()=>{
+        //         for(let i=0; i<product.length; i++){
+        //             let p=document.createElement("p")
+        //             p.innerHTML=product[i].name
+        //             document.body.append(p)
+        //         }
+        //     },3000)
+        // }
+        // disc(func)
+        
+
+    </script>
+
+</body>
+</html>

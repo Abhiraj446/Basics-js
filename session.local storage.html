@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="local()">Local</button>
+    <button onclick="session()">session</button>
+
+    <!-- <h2>Create a JSON string from a JavaScript object.</h2> -->
+    <h2>Creating an Object from a JSON String</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        function local(){
+            localStorage.setItem("Abhiraj","Khatana")
+        }
+
+        function session(){
+            sessionStorage.setItem("Hey","hii")
+        }
+
+
+        // const obj = {name: "John", age: 30, city: "New York"};
+        // const myJSON = JSON.stringify(obj);
+        // document.getElementById("demo").innerHTML = myJSON;
+
+        // const txt = '{"name":"John", "age":30, "city":"New York"}'
+        // const obj = JSON.parse(txt);
+        // document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
+
+        // sessionStorage.setItem("lastname", "Smith");
+        // let personName = sessionStorage.getItem("lastname");
+        // document.getElementById("demo").innerHTML = personName;
+
+        localStorage.setItem("lastname", "Smith");
+        let personName = localStorage.getItem("lastname");
+        document.getElementById("demo").innerHTML = personName;
+    </script>
+
+</body>
+</html>

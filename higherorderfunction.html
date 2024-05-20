@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Hello Higher order function</h1>
+
+    <script>
+
+        // var a=[2,5,8]
+        // for(let i of a){
+        //     let b=i+2
+        //     console.log(b)
+        // }
+        //It doesn't give old value so we use Map
+
+
+        //Map
+        //It always create a new array
+
+        //array method
+        // let b=[12,14,16,18]
+        // let bm=b.map((value)=>value+10)
+        // console.log(bm)
+
+        //string method
+        // let c=["apple","mango","guava"]
+        // let cm=c.map((value)=>value.toUpperCase())
+        // console.log(cm)
+
+
+        //filter
+        // let d=[2,7,10,11]
+        // let df=d.filter((value)=>value%2==0)
+        // console.log(df)
+
+        // let e=["Abhiraj","aryan","aditya","kannu"]
+        // let ef=e.filter((value)=>value.length>5)
+        // console.log(ef)
+
+
+        //Access data from object in array
+        // let a=[
+        //     {
+        //         name:"abhiraj",
+        //         age:"19"
+        //     },
+        //     {
+        //         name:"kannu",
+        //         age:"19"
+        //     },
+        //     {
+        //         name:"abhi",
+        //         add:"sre"
+        //     }
+        // ]
+        // let b=a.filter((obj)=>
+        //     obj.hasOwnProperty("age") )
+        //     console.log(b)
+
+
+        //reduce function
+
+        // let a=[1,5,4,6]
+        // let b=a.reduce((value,item)=>value+item)
+        // console.log(b)
+
+        // let c=["Abhiraj"+" "+"Khatana"]
+        // let d=c.reduce((value,item)=>value+item)
+        // console.log(d)
+
+        let number=[5.1,8.2,9.5,7.7,3.3]
+        let num=number.reduce((value,items)=>{
+            return value+Math.round(items);
+        })
+        console.log(num)
+     
+        // function maxNum(number){
+        //     return number.reduce((max,item)=>{
+        //         if(item>max){
+        //             return item;
+        //         }
+        //         return max;
+        //     },number[0])
+        // };
+
+        // let max=maxNum(number)
+        // console.log(max)
+
+        
+
+    </script>
+
+</body>
+</html>
